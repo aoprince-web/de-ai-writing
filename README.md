@@ -6,7 +6,8 @@ The goal is to make writing clearer and more specific while preserving the autho
 
 ## Repository contents
 
-- `SKILL.md`: instructions for an AI assistant or editor applying the standard.
+- `SKILL.md`: instructions for an AI assistant or editor applying the de-AI writing standard.
+- `skills/phase-plan/SKILL.md`: a separate, imported project-planning skill from [BCYAYAY14/phase-plan](https://github.com/BCYAYAY14/phase-plan). It is designed primarily for Claude Code; see its [local notes](skills/phase-plan/README.md) for compatibility details.
 - `references/signs.md`: the catalogue of signs, explanations, and suggested fixes.
 - `scripts/check_ai_signs.py`: a lightweight pattern scanner for plain-text, Markdown, and HTML files.
 - `examples/before-after.md`: a short example of the editing approach.
@@ -33,6 +34,10 @@ The scanner only catches a subset of wording patterns. It cannot reliably judge 
 4. Keep clean sentences. Do not rewrite text just to make it different.
 5. Leave quotations and source titles unchanged.
 6. Report briefly what changed, what pattern counts changed where the scanner was used, and any deliberate remaining matches.
+
+## Separate project-planning skill
+
+The repository also includes an imported copy of the `phase-plan` skill in `skills/phase-plan/`. It is separate from the de-AI writing workflow and does not change the root `SKILL.md`. The original skill targets Claude Code and may need adaptation before use with other assistants.
 
 ## Use with other assistants
 
